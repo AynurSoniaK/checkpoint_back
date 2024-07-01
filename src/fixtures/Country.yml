@@ -1,0 +1,7 @@
+entity: Continent
+items:
+  ad{1..10}:
+    code: "{{commerce.name}}"
+    name: "{{commerce.name}}"
+    emoji: "{{person.name}}"
+    continent: "{{commerce.name}}"

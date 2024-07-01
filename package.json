@@ -1,0 +1,26 @@
+{
+  "name": "checkpoint-back",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts",
+    "loadFixtures": "fixtures-ts-node-commonjs load ./src/fixtures --dataSource=./src/lib/datasource.ts --sync"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "cors": "^2.8.5",
+    "graphql": "^16.8.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.7",
+    "type-graphql": "^2.0.0-beta.3",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@graphql-tools/mock": "^9.0.2",
+    "@types/node": "^18.19.1",
+    "ts-node-dev": "^2.0.0",
+    "typeorm-fixtures-cli": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}
